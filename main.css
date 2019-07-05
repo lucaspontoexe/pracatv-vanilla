@@ -60,13 +60,13 @@ body {
 }
 
 .overlay span {
-  margin: 10px;
+  margin: 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .overlay .heading {
-  line-height: 70px;
-  font-size: 34pt;
+  line-height: 67px;
+  font-size: 36pt;
   font-family: 'Futura Heavy';
   color: #fafafa;
 }
@@ -75,14 +75,15 @@ body {
   line-height: 44px;
   font-size: 24pt;
   font-family: 'Futura Light';
-  color: #02213e;
+  color: rgba(2, 33, 62, 0.75);
 }
 
 .overlay .top-strip {
+  display: inline-block;
   position: relative;
   height: 67px;
-  max-width: 1280px;
-  background-color: #02203c;
+  max-width: 1180px;
+  background-color: rgba(2, 32, 60, 0.75);
 }
 
 .overlay .middle-strip {

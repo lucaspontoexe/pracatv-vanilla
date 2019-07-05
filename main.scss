@@ -3,7 +3,7 @@ $orange: rgb(255, 127, 0);
 $blue: rgb(90, 162, 245);
 
 $white: rgb(250, 250, 250);
-$darkblue: rgb(2, 32, 60);
+$darkblue: rgba(2, 32, 60, 0.75);
 
 $accent: $orange;
 
@@ -70,13 +70,13 @@ body {
 
     span {
         // General rules and fallbacks for texts in overlays
-        margin: 10px;
+        margin: 20px;
         font-family: Arial, Helvetica, sans-serif
     }
 
     .heading {
-        line-height: 70px;
-        font-size: 34pt;
+        line-height: 67px;
+        font-size: 36pt;
         font-family: 'Futura Heavy';
         color: $white;
     }
@@ -90,10 +90,10 @@ body {
     
 
     .top-strip {
+        display: inline-block;
         position: relative;
         height: 67px; 
-        max-width: 1280px;
-
+        max-width: 1180px;
         background-color: $darkblue;
     }
 
