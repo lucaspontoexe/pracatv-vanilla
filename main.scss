@@ -1,0 +1,115 @@
+$yellow: rgb(250, 250, 32);
+$orange: rgb(255, 127, 0);
+$blue: rgb(90, 162, 245);
+
+$white: rgb(250, 250, 250);
+$darkblue: rgb(2, 32, 60);
+
+$accent: $orange;
+
+@font-face {
+    font-family: 'Futura';
+    src: url('futura/futur.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Heavy';
+    src: url('futura/Futura\ Heavy\ font.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Bold';
+    src: url('futura/Futura\ Bold\ font.ttf');
+}
+
+@font-face {
+    font-family: 'Futura Light';
+    src: url('futura/futura light bt.ttf');
+}
+
+body {
+    background-image: url("20190704120426.jpg");
+    width: 1920px;
+    height: 1080px;
+}
+
+.widget {
+    position: absolute;
+    left: 102px;
+    top: 890px;
+    width: 232px;
+
+    background-color: $white;
+
+    .logo {
+        position: relative;
+        height: 70px;
+        background-color: $white;
+    }
+
+    .clock {
+        position: relative;
+        height: 44px;
+        background-color: $accent;
+        text-align: center;
+        margin: 0px;
+
+        span {
+            line-height: 46px;
+            font-size: 30px;
+            color: $white;
+            font-family: 'Futura Heavy', Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 890px;
+    left: 340px;
+
+    span {
+        // General rules and fallbacks for texts in overlays
+        margin: 10px;
+        font-family: Arial, Helvetica, sans-serif
+    }
+
+    .heading {
+        line-height: 70px;
+        font-size: 34pt;
+        font-family: 'Futura Heavy';
+        color: $white;
+    }
+
+    .description {
+        line-height: 44px;
+        font-size: 24pt;
+        font-family: 'Futura Light';
+        color: lighten($color: $darkblue, $amount: 0.5);
+    }
+    
+
+    .top-strip {
+        position: relative;
+        height: 67px; 
+        max-width: 1280px;
+
+        background-color: $darkblue;
+    }
+
+    .middle-strip {
+        position: relative;
+        height: 8px;
+        width: 1310px;
+
+        background-color: $accent;
+    }
+
+    .bottom-strip {
+        position: relative;
+        height: 40px;
+        width: 1310px;
+
+        background-color: $white;
+    }
+}
