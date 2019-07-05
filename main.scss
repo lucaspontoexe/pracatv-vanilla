@@ -3,7 +3,7 @@ $orange: rgb(255, 127, 0);
 $blue: rgb(90, 162, 245);
 
 $white: rgb(250, 250, 250);
-$darkblue: rgba(2, 32, 60, 0.75);
+$darkblue: rgba(2, 32, 60, 0.9);
 
 $accent: $orange;
 
@@ -27,8 +27,15 @@ $accent: $orange;
     src: url('futura/futura light bt.ttf');
 }
 
+@font-face {
+    font-family: 'Futura Medium';
+    src: url('futura/futura medium bt.ttf');
+}
+
 body {
-    background-image: url("20190704120426.jpg");
+    //background-image: url("20190704120426.jpg");
+    //background-image: url('SMPTE_Color_Bars.svg');
+    background-color: green;
     width: 1920px;
     height: 1080px;
 }

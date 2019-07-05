@@ -18,8 +18,13 @@
   src: url("futura/futura light bt.ttf");
 }
 
+@font-face {
+  font-family: 'Futura Medium';
+  src: url("futura/futura medium bt.ttf");
+}
+
 body {
-  background-image: url("20190704120426.jpg");
+  background-color: green;
   width: 1920px;
   height: 1080px;
 }
@@ -75,7 +80,7 @@ body {
   line-height: 44px;
   font-size: 24pt;
   font-family: 'Futura Light';
-  color: rgba(2, 33, 62, 0.75);
+  color: rgba(2, 33, 62, 0.9);
 }
 
 .overlay .top-strip {
@@ -83,7 +88,7 @@ body {
   position: relative;
   height: 67px;
   max-width: 1180px;
-  background-color: rgba(2, 32, 60, 0.75);
+  background-color: rgba(2, 32, 60, 0.9);
 }
 
 .overlay .middle-strip {
