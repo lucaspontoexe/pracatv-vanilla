@@ -52,7 +52,7 @@ body {
 }
 
 .widget .clock span {
-  line-height: 46px;
+  line-height: 44px;
   font-size: 30px;
   color: #fafafa;
   font-family: 'Futura Heavy', Arial, Helvetica, sans-serif;
@@ -70,10 +70,11 @@ body {
 }
 
 .overlay .heading {
-  line-height: 67px;
+  line-height: 65px;
   font-size: 36pt;
   font-family: 'Futura Heavy';
   color: #fafafa;
+  text-transform: uppercase;
 }
 
 .overlay .description {
@@ -86,7 +87,7 @@ body {
 .overlay .top-strip {
   display: inline-block;
   position: relative;
-  height: 67px;
+  height: 65px;
   max-width: 1180px;
   background-color: rgba(2, 32, 60, 0.9);
 }
@@ -103,5 +104,14 @@ body {
   height: 40px;
   width: 1310px;
   background-color: #fafafa;
+}
+
+.overlay .thing-for-animation {
+  position: absolute;
+  height: 65px;
+  width: 12px;
+  top: 0px;
+  left: 860px;
+  background-color: #ff7f00;
 }
 /*# sourceMappingURL=main.css.map */

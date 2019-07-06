@@ -62,7 +62,7 @@ body {
         margin: 0px;
 
         span {
-            line-height: 46px;
+            line-height: 44px;
             font-size: 30px;
             color: $white;
             font-family: 'Futura Heavy', Arial, Helvetica, sans-serif;
@@ -82,10 +82,11 @@ body {
     }
 
     .heading {
-        line-height: 67px;
+        line-height: 65px;
         font-size: 36pt;
         font-family: 'Futura Heavy';
         color: $white;
+        text-transform: uppercase;
     }
 
     .description {
@@ -99,8 +100,9 @@ body {
     .top-strip {
         display: inline-block;
         position: relative;
-        height: 67px; 
+        height: 65px; 
         max-width: 1180px;
+        
         background-color: $darkblue;
     }
 
@@ -118,5 +120,14 @@ body {
         width: 1310px;
 
         background-color: $white;
+    }
+
+    .thing-for-animation {
+        position: absolute;
+        height: 65px;
+        width: 12px;
+        top: 0px;
+        left: 860px;
+        background-color: $accent;
     }
 }
