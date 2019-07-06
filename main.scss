@@ -56,13 +56,13 @@ body {
 
     .clock {
         position: relative;
-        height: 44px;
+        height: 45px;
         background-color: $accent;
         text-align: center;
         margin: 0px;
 
         span {
-            line-height: 44px;
+            line-height: 45px;
             font-size: 30px;
             color: $white;
             font-family: 'Futura Heavy', Arial, Helvetica, sans-serif;
@@ -90,7 +90,7 @@ body {
     }
 
     .description {
-        line-height: 44px;
+        line-height: 40px;
         font-size: 24pt;
         font-family: 'Futura Light';
         color: lighten($color: $darkblue, $amount: 0.5);
@@ -108,7 +108,7 @@ body {
 
     .middle-strip {
         position: relative;
-        height: 8px;
+        height: 10px;
         width: 1310px;
 
         background-color: $accent;
