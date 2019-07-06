@@ -54,6 +54,8 @@ body {
     top: 890px;
     left: 340px;
 
+    $topbarHeight: 66px;
+
     span {
         // General rules and fallbacks for texts in overlays
         margin-left: 20px;
@@ -63,7 +65,7 @@ body {
     }
 
     .heading {
-        line-height: 66px;
+        line-height: $topbarHeight;
         font-size: 36pt;
         font-family: 'Futura Heavy';
         color: $white;
@@ -82,7 +84,7 @@ body {
         display: inline-block;
         position: relative;
         overflow: hidden;
-        height: 66px;
+        height: $topbarHeight;
         max-width: 1180px;
 
         background-color: $darkblue;
@@ -119,7 +121,7 @@ body {
 
     .thing-for-animation {
         position: absolute;
-        height: 67px;
+        height: $topbarHeight;
         width: 12px;
         top: 0px;
         left: 860px;
