@@ -150,8 +150,8 @@ body {
   line-height: 66px;
   font-size: 36pt;
   font-family: 'Futura Heavy';
-  color: #fafafa;
   text-transform: uppercase;
+  color: #fafafa;
 }
 
 .overlay .description {
