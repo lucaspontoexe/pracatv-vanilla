@@ -70,7 +70,7 @@ body {
 }
 
 .overlay .heading {
-  line-height: 65px;
+  line-height: 67px;
   font-size: 36pt;
   font-family: 'Futura Heavy';
   color: #fafafa;
@@ -78,7 +78,7 @@ body {
 }
 
 .overlay .description {
-  line-height: 40px;
+  line-height: 42px;
   font-size: 24pt;
   font-family: 'Futura Light';
   color: rgba(2, 33, 62, 0.9);
@@ -87,28 +87,28 @@ body {
 .overlay .top-strip {
   display: inline-block;
   position: relative;
-  height: 65px;
+  height: 67px;
   max-width: 1180px;
   background-color: rgba(2, 32, 60, 0.9);
 }
 
 .overlay .middle-strip {
   position: relative;
-  height: 10px;
+  height: 6px;
   width: 1310px;
   background-color: #ff7f00;
 }
 
 .overlay .bottom-strip {
   position: relative;
-  height: 40px;
+  height: 42px;
   width: 1310px;
   background-color: #fafafa;
 }
 
 .overlay .thing-for-animation {
   position: absolute;
-  height: 65px;
+  height: 67px;
   width: 12px;
   top: 0px;
   left: 860px;

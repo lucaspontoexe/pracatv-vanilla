@@ -82,7 +82,7 @@ body {
     }
 
     .heading {
-        line-height: 65px;
+        line-height: 67px;
         font-size: 36pt;
         font-family: 'Futura Heavy';
         color: $white;
@@ -90,7 +90,7 @@ body {
     }
 
     .description {
-        line-height: 40px;
+        line-height: 42px;
         font-size: 24pt;
         font-family: 'Futura Light';
         color: lighten($color: $darkblue, $amount: 0.5);
@@ -100,7 +100,7 @@ body {
     .top-strip {
         display: inline-block;
         position: relative;
-        height: 65px; 
+        height: 67px; 
         max-width: 1180px;
         
         background-color: $darkblue;
@@ -108,7 +108,7 @@ body {
 
     .middle-strip {
         position: relative;
-        height: 10px;
+        height: 6px;
         width: 1310px;
 
         background-color: $accent;
@@ -116,7 +116,7 @@ body {
 
     .bottom-strip {
         position: relative;
-        height: 40px;
+        height: 42px;
         width: 1310px;
 
         background-color: $white;
@@ -124,7 +124,7 @@ body {
 
     .thing-for-animation {
         position: absolute;
-        height: 65px;
+        height: 67px;
         width: 12px;
         top: 0px;
         left: 860px;
