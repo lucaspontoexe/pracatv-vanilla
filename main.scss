@@ -89,8 +89,8 @@ body {
 
         background-color: $darkblue;
 
-        animation: fill-topbar 0.4s;
-        animation-delay: 1s;
+        animation: fill-topbar 0.5s;
+        animation-delay: 0.5s;
         animation-fill-mode: both;
     }
 
@@ -115,7 +115,7 @@ body {
         background-color: $white;
        
         animation: fill-to-right 1s;
-        animation-delay: 1.2s;
+        animation-delay: 1s;
         animation-fill-mode: both;
     }
 
