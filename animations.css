@@ -1,0 +1,74 @@
+@-webkit-keyframes smallthing {
+  0% {
+    width: 0px;
+    left: 0px;
+  }
+  50% {
+    width: 12px;
+    left: 0px;
+  }
+  70% {
+    width: 12px;
+    left: 860px;
+  }
+  100% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
+@keyframes smallthing {
+  0% {
+    width: 0px;
+    left: 0px;
+  }
+  50% {
+    width: 12px;
+    left: 0px;
+  }
+  70% {
+    width: 12px;
+    left: 860px;
+  }
+  100% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
+@-webkit-keyframes fill-topbar {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 860px;
+  }
+}
+
+@keyframes fill-topbar {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 860px;
+  }
+}
+
+@-webkit-keyframes fill-to-right {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 1310px;
+  }
+}
+
+@keyframes fill-to-right {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 1310px;
+  }
+}
+/*# sourceMappingURL=animations.css.map */

@@ -8,6 +8,7 @@ $darkblue: rgba(2, 32, 60, 0.9);
 $accent: $orange;
 
 @import 'fonts.scss';
+@import 'animations.scss';
 
 body {
     //background-image: url("20190704120426.jpg");
@@ -55,12 +56,14 @@ body {
 
     span {
         // General rules and fallbacks for texts in overlays
-        margin: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        white-space: nowrap;
         font-family: Arial, Helvetica, sans-serif
     }
 
     .heading {
-        line-height: 67px;
+        line-height: 66px;
         font-size: 36pt;
         font-family: 'Futura Heavy';
         color: $white;
@@ -73,31 +76,45 @@ body {
         font-family: 'Futura Light';
         color: lighten($color: $darkblue, $amount: 0.5);
     }
-    
+
 
     .top-strip {
         display: inline-block;
         position: relative;
-        height: 67px; 
+        overflow: hidden;
+        height: 66px;
         max-width: 1180px;
-        
+
         background-color: $darkblue;
+
+        animation: fill-topbar 0.4s;
+        animation-delay: 1s;
+        animation-fill-mode: both;
     }
 
     .middle-strip {
-        position: relative;
+        position: absolute;
+        top: 67px;
         height: 6px;
         width: 1310px;
 
         background-color: $accent;
+        animation: fill-to-right 0.4s;
+        animation-delay: 0.25s;
+        animation-fill-mode: both;
     }
 
     .bottom-strip {
         position: relative;
-        height: 42px;
+        overflow: hidden;
+        height: 45px;
         width: 1310px;
 
         background-color: $white;
+       
+        animation: fill-to-right 1s;
+        animation-delay: 1.2s;
+        animation-fill-mode: both;
     }
 
     .thing-for-animation {
@@ -107,5 +124,9 @@ body {
         top: 0px;
         left: 860px;
         background-color: $accent;
+
+        //testin'
+        animation: smallthing 2s;
+        animation-fill-mode: both;
     }
 }

@@ -23,6 +23,80 @@
   src: url("futura/futura medium bt.ttf");
 }
 
+@-webkit-keyframes smallthing {
+  0% {
+    width: 0px;
+    left: 0px;
+  }
+  50% {
+    width: 12px;
+    left: 0px;
+  }
+  70% {
+    width: 12px;
+    left: 860px;
+  }
+  100% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
+@keyframes smallthing {
+  0% {
+    width: 0px;
+    left: 0px;
+  }
+  50% {
+    width: 12px;
+    left: 0px;
+  }
+  70% {
+    width: 12px;
+    left: 860px;
+  }
+  100% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
+@-webkit-keyframes fill-topbar {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 860px;
+  }
+}
+
+@keyframes fill-topbar {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 860px;
+  }
+}
+
+@-webkit-keyframes fill-to-right {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 1310px;
+  }
+}
+
+@keyframes fill-to-right {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 1310px;
+  }
+}
+
 body {
   background-color: green;
   height: 1080px;
@@ -66,12 +140,14 @@ body {
 }
 
 .overlay span {
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  white-space: nowrap;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .overlay .heading {
-  line-height: 67px;
+  line-height: 66px;
   font-size: 36pt;
   font-family: 'Futura Heavy';
   color: #fafafa;
@@ -88,23 +164,44 @@ body {
 .overlay .top-strip {
   display: inline-block;
   position: relative;
-  height: 67px;
+  overflow: hidden;
+  height: 66px;
   max-width: 1180px;
   background-color: rgba(2, 32, 60, 0.9);
+  -webkit-animation: fill-topbar 0.4s;
+          animation: fill-topbar 0.4s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .overlay .middle-strip {
-  position: relative;
+  position: absolute;
+  top: 67px;
   height: 6px;
   width: 1310px;
   background-color: #ff7f00;
+  -webkit-animation: fill-to-right 0.4s;
+          animation: fill-to-right 0.4s;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .overlay .bottom-strip {
   position: relative;
-  height: 42px;
+  overflow: hidden;
+  height: 45px;
   width: 1310px;
   background-color: #fafafa;
+  -webkit-animation: fill-to-right 1s;
+          animation: fill-to-right 1s;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .overlay .thing-for-animation {
@@ -114,5 +211,9 @@ body {
   top: 0px;
   left: 860px;
   background-color: #ff7f00;
+  -webkit-animation: smallthing 2s;
+          animation: smallthing 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 /*# sourceMappingURL=main.css.map */
