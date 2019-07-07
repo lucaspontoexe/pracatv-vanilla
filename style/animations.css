@@ -36,6 +36,44 @@
   }
 }
 
+@-webkit-keyframes undo-smallthing {
+  100% {
+    width: 0px;
+    left: 0px;
+  }
+  66% {
+    width: 12px;
+    left: 0px;
+  }
+  33% {
+    width: 12px;
+    left: 860px;
+  }
+  0% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
+@keyframes undo-smallthing {
+  100% {
+    width: 0px;
+    left: 0px;
+  }
+  66% {
+    width: 12px;
+    left: 0px;
+  }
+  33% {
+    width: 12px;
+    left: 860px;
+  }
+  0% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
 @-webkit-keyframes fill-topbar {
   0% {
     width: 0px;
@@ -54,6 +92,24 @@
   }
 }
 
+@-webkit-keyframes unfill-topbar {
+  0% {
+    width: 860px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes unfill-topbar {
+  0% {
+    width: 860px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
 @-webkit-keyframes fill-to-right {
   0% {
     width: 0px;
@@ -69,6 +125,24 @@
   }
   100% {
     width: 1310px;
+  }
+}
+
+@-webkit-keyframes unfill-from-right {
+  0% {
+    width: 1310px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes unfill-from-right {
+  0% {
+    width: 1310px;
+  }
+  100% {
+    width: 0px;
   }
 }
 /*# sourceMappingURL=animations.css.map */

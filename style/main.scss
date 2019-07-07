@@ -97,6 +97,12 @@ body {
             animation-delay: 0.5s;
             animation-fill-mode: both;
         }
+
+        &.reverse {
+            animation: unfill-topbar 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
     }
 
     .middle-strip {
@@ -110,6 +116,12 @@ body {
         &.animated {
             animation: fill-to-right 0.4s;
             animation-delay: 0.25s;
+            animation-fill-mode: both;
+        }
+
+        &.reverse {
+            animation: unfill-from-right 0.4s;
+            animation-delay: 0.8s;
             animation-fill-mode: both;
         }
     }
@@ -127,6 +139,12 @@ body {
             animation-delay: 1s;
             animation-fill-mode: both;
         }
+
+        &.reverse {
+            animation: unfill-from-right 0.4s;
+            animation-delay: 0.6s;
+            animation-fill-mode: both;
+        }
     }
 
     .thing-for-animation {
@@ -142,5 +160,9 @@ body {
             animation-fill-mode: both;
         }
 
+        &.reverse {
+            animation: undo-smallthing 1.51s; //hack
+            animation-fill-mode: both;
+        }
     }
 }

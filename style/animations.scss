@@ -3,26 +3,63 @@
         width: 0px;
         left: 0px;
     }
+
     25% {
         width: 12px;
         left: 0px;
     }
+
     50% {
         width: 12px;
         left: 860px;
     }
+
     100% {
         width: 0px;
         left: 860px;
     }
 }
 
+@keyframes undo-smallthing {
+    100% {
+        width: 0px;
+        left: 0px;
+    }
+
+    66% {
+        width: 12px;
+        left: 0px;
+    }
+
+    33% {
+        width: 12px;
+        left: 860px;
+    }
+
+    0% {
+        width: 0px;
+        left: 860px;
+    }
+}
+
+
 @keyframes fill-topbar {
     0% {
         width: 0px;
     }
+
     100% {
         width: 860px;
+    }
+}
+
+@keyframes unfill-topbar {
+    0% {
+        width: 860px;
+    }
+
+    100% {
+        width: 0px;
     }
 }
 
@@ -30,7 +67,18 @@
     0% {
         width: 0px;
     }
+
     100% {
         width: 1310px;
+    }
+}
+
+@keyframes unfill-from-right {
+    0% {
+        width: 1310px;
+    }
+
+    100% {
+        width: 0px;
     }
 }

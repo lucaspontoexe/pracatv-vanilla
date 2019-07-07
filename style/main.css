@@ -61,6 +61,44 @@
   }
 }
 
+@-webkit-keyframes undo-smallthing {
+  100% {
+    width: 0px;
+    left: 0px;
+  }
+  66% {
+    width: 12px;
+    left: 0px;
+  }
+  33% {
+    width: 12px;
+    left: 860px;
+  }
+  0% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
+@keyframes undo-smallthing {
+  100% {
+    width: 0px;
+    left: 0px;
+  }
+  66% {
+    width: 12px;
+    left: 0px;
+  }
+  33% {
+    width: 12px;
+    left: 860px;
+  }
+  0% {
+    width: 0px;
+    left: 860px;
+  }
+}
+
 @-webkit-keyframes fill-topbar {
   0% {
     width: 0px;
@@ -79,6 +117,24 @@
   }
 }
 
+@-webkit-keyframes unfill-topbar {
+  0% {
+    width: 860px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes unfill-topbar {
+  0% {
+    width: 860px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
 @-webkit-keyframes fill-to-right {
   0% {
     width: 0px;
@@ -94,6 +150,24 @@
   }
   100% {
     width: 1310px;
+  }
+}
+
+@-webkit-keyframes unfill-from-right {
+  0% {
+    width: 1310px;
+  }
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes unfill-from-right {
+  0% {
+    width: 1310px;
+  }
+  100% {
+    width: 0px;
   }
 }
 
@@ -181,6 +255,15 @@ body {
           animation-fill-mode: both;
 }
 
+.overlay .top-strip.reverse {
+  -webkit-animation: unfill-topbar 0.5s;
+          animation: unfill-topbar 0.5s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .overlay .middle-strip {
   position: absolute;
   top: 64px;
@@ -194,6 +277,15 @@ body {
           animation: fill-to-right 0.4s;
   -webkit-animation-delay: 0.25s;
           animation-delay: 0.25s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.overlay .middle-strip.reverse {
+  -webkit-animation: unfill-from-right 0.4s;
+          animation: unfill-from-right 0.4s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -215,6 +307,15 @@ body {
           animation-fill-mode: both;
 }
 
+.overlay .bottom-strip.reverse {
+  -webkit-animation: unfill-from-right 0.4s;
+          animation: unfill-from-right 0.4s;
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
 .overlay .thing-for-animation {
   position: absolute;
   height: 66px;
@@ -227,6 +328,13 @@ body {
 .overlay .thing-for-animation.animated {
   -webkit-animation: smallthing 2s;
           animation: smallthing 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.overlay .thing-for-animation.reverse {
+  -webkit-animation: undo-smallthing 1.51s;
+          animation: undo-smallthing 1.51s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
