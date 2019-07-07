@@ -83,7 +83,7 @@ body {
         font-size: 36pt;
         font-family: 'Futura Heavy';
         text-transform: uppercase;
-        color: $white;
+        color: $white;   
     }
 
     .description {
@@ -176,5 +176,27 @@ body {
             animation: undo-smallthing 1.51s; //hack
             animation-fill-mode: both;
         }
+    }
+}
+
+.imaginary-strip {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    bottom: 200px;
+    height: 66px;
+    max-width: 1180px;
+    visibility: hidden;
+    //background-color: rgba(2, 32, 60, 0.9);
+
+    span {
+        margin-left: 20px;
+        margin-right: 20px;
+        white-space: nowrap;
+        line-height: 66px;
+        font-size: 36pt;
+        font-family: 'Futura Heavy';
+        text-transform: uppercase;
+        color: $white;
     }
 }

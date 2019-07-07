@@ -349,4 +349,25 @@ body {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
+
+.imaginary-strip {
+  display: inline-block;
+  position: absolute;
+  overflow: hidden;
+  bottom: 200px;
+  height: 66px;
+  max-width: 1180px;
+  visibility: hidden;
+}
+
+.imaginary-strip span {
+  margin-left: 20px;
+  margin-right: 20px;
+  white-space: nowrap;
+  line-height: 66px;
+  font-size: 36pt;
+  font-family: 'Futura Heavy';
+  text-transform: uppercase;
+  color: #fafafa;
+}
 /*# sourceMappingURL=main.css.map */
