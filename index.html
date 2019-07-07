@@ -15,6 +15,19 @@
     <script>
         // Temporary animation trigger
         function enter() {
+            const root = document.documentElement;
+            const imaginaryStrip = document.querySelector('.imaginary-strip');
+            const imaginaryText = imaginaryStrip.querySelector('span');
+            const topbarText = document.querySelector('.heading');
+            const bottombarText = document.querySelector('.description');
+            let topbarInput = document.querySelector('#insert_top').value;
+            let bottombarInput = document.querySelector('#insert_bottom').value;
+
+            imaginaryText.innerText = topbarInput;
+            topbarText.innerText = topbarInput;
+            bottombarText.innerText = bottombarInput;
+            root.style.setProperty('--topbar-width', imaginaryStrip.offsetWidth + "px");
+
             for (element of document.querySelector('.overlay').children) {
                 if (element.classList.contains('leave')) element.classList.replace("leave", "enter");
                 else element.classList.add("enter");
@@ -26,18 +39,31 @@
                 element.classList.replace("enter", "leave");
             }
         }
+
+        function addZero(number) {
+            return number < 10 ? '0' + number : number;
+        }
+
+        function updateClock() {
+            const clock = document.querySelector('.clock span');
+            const date = new Date();
+            clock.innerText = `${addZero(date.getHours())}:${addZero(date.getMinutes())}`;
+        }
+        setInterval(updateClock, 1000);
     </script>
 
     <div class="debug">
+        <input type="text" id="insert_top">
+        <input type="text" id="insert_bottom">
         <button onclick="enter()">animate</button>
         <button onclick="leave()">leave</button>
     </div>
-    
+
     <div class="widget">
         <div class="logo"></div>
         <div class="clock"><span>12:34</span></div>
     </div>
-    
+
     <div class="overlay">
         <div class="imaginary-strip"><span>testing</span></div>
         <div class="top-strip leave"><span class="heading">CRIME OCORRE, NADA ACONTECE</span></div>
