@@ -12,6 +12,23 @@
 
 <body>
 
+    <script>
+        // Temporary animation trigger
+        function anim8() {
+            for (element of document.querySelector('.overlay').children) {
+                element.classList.add("animated")
+            }
+        }
+
+        function reverse() {
+            for (element of document.querySelector('.overlay').children) {
+                element.classList.replace("animated", "reverse")
+            }
+        }
+        setTimeout(anim8, 5000)
+        setTimeout(reverse, 10000)
+    </script>
+
     <div class="widget">
         <div class="logo"></div>
         <div class="clock"><span>12:34</span></div>
