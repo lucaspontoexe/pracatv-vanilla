@@ -56,6 +56,8 @@ body {
 
     $topbarHeight: 66px;
 
+    /*  TEXT  */
+
     span {
         // General rules and fallbacks for texts in overlays
         margin-left: 20px;
@@ -79,6 +81,7 @@ body {
         color: lighten($color: $darkblue, $amount: 0.5);
     }
 
+    /*  STRIPS and everything else  */
 
     .top-strip {
         display: inline-block;
@@ -89,9 +92,11 @@ body {
 
         background-color: $darkblue;
 
-        animation: fill-topbar 0.5s;
-        animation-delay: 0.5s;
-        animation-fill-mode: both;
+        &.animated {
+            animation: fill-topbar 0.5s;
+            animation-delay: 0.5s;
+            animation-fill-mode: both;
+        }
     }
 
     .middle-strip {
@@ -101,9 +106,12 @@ body {
         width: 1310px;
 
         background-color: $accent;
-        animation: fill-to-right 0.4s;
-        animation-delay: 0.25s;
-        animation-fill-mode: both;
+
+        &.animated {
+            animation: fill-to-right 0.4s;
+            animation-delay: 0.25s;
+            animation-fill-mode: both;
+        }
     }
 
     .bottom-strip {
@@ -113,10 +121,12 @@ body {
         width: 1310px;
 
         background-color: $white;
-       
-        animation: fill-to-right 1s;
-        animation-delay: 1s;
-        animation-fill-mode: both;
+
+        &.animated {
+            animation: fill-to-right 1s;
+            animation-delay: 1s;
+            animation-fill-mode: both;
+        }
     }
 
     .thing-for-animation {
@@ -127,8 +137,10 @@ body {
         left: 860px;
         background-color: $accent;
 
-        //testin'
-        animation: smallthing 2s;
-        animation-fill-mode: both;
+        &.animated {
+            animation: smallthing 2s;
+            animation-fill-mode: both;
+        }
+
     }
 }

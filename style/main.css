@@ -137,6 +137,8 @@ body {
   position: absolute;
   top: 890px;
   left: 340px;
+  /*  TEXT  */
+  /*  STRIPS and everything else  */
 }
 
 .overlay span {
@@ -168,6 +170,9 @@ body {
   height: 66px;
   max-width: 1180px;
   background-color: rgba(2, 32, 60, 0.9);
+}
+
+.overlay .top-strip.animated {
   -webkit-animation: fill-topbar 0.5s;
           animation: fill-topbar 0.5s;
   -webkit-animation-delay: 0.5s;
@@ -182,6 +187,9 @@ body {
   height: 6px;
   width: 1310px;
   background-color: #ff7f00;
+}
+
+.overlay .middle-strip.animated {
   -webkit-animation: fill-to-right 0.4s;
           animation: fill-to-right 0.4s;
   -webkit-animation-delay: 0.25s;
@@ -196,6 +204,9 @@ body {
   height: 45px;
   width: 1310px;
   background-color: #fafafa;
+}
+
+.overlay .bottom-strip.animated {
   -webkit-animation: fill-to-right 1s;
           animation: fill-to-right 1s;
   -webkit-animation-delay: 1s;
@@ -211,6 +222,9 @@ body {
   top: 0px;
   left: 860px;
   background-color: #ff7f00;
+}
+
+.overlay .thing-for-animation.animated {
   -webkit-animation: smallthing 2s;
           animation: smallthing 2s;
   -webkit-animation-fill-mode: both;
