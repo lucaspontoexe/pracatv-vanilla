@@ -11,12 +11,12 @@
 
     50% {
         width: 12px;
-        left: 860px;
+        left: var(--topbar-width);
     }
 
     100% {
         width: 0px;
-        left: 860px;
+        left: var(--topbar-width);
     }
 }
 
@@ -33,12 +33,12 @@
 
     33% {
         width: 12px;
-        left: 860px;
+        left: var(--topbar-width);
     }
 
     0% {
         width: 0px;
-        left: 860px;
+        left: var(--topbar-width);
     }
 }
 
@@ -49,13 +49,13 @@
     }
 
     100% {
-        width: 860px;
+        width: var(--topbar-width);
     }
 }
 
 @keyframes unfill-topbar {
     0% {
-        width: 860px;
+        width: var(--topbar-width);
     }
 
     100% {

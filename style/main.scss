@@ -5,7 +5,13 @@ $blue: rgb(90, 162, 245);
 $white: rgb(250, 250, 250);
 $darkblue: rgba(2, 32, 60, 0.9);
 
-$accent: $orange;
+:root {
+    --accent-color: #{$orange};
+    --topbar-width: 860px;
+}
+
+$accent: var(--accent-color);
+
 
 @import 'fonts.scss';
 @import 'animations.scss';

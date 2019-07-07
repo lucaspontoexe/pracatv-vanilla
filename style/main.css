@@ -1,3 +1,8 @@
+:root {
+  --accent-color: #ff7f00;
+  --topbar-width: 860px;
+}
+
 @font-face {
   font-family: 'Futura';
   src: url("../futura/futur.ttf");
@@ -34,11 +39,11 @@
   }
   50% {
     width: 12px;
-    left: 860px;
+    left: var(--topbar-width);
   }
   100% {
     width: 0px;
-    left: 860px;
+    left: var(--topbar-width);
   }
 }
 
@@ -53,11 +58,11 @@
   }
   50% {
     width: 12px;
-    left: 860px;
+    left: var(--topbar-width);
   }
   100% {
     width: 0px;
-    left: 860px;
+    left: var(--topbar-width);
   }
 }
 
@@ -72,11 +77,11 @@
   }
   33% {
     width: 12px;
-    left: 860px;
+    left: var(--topbar-width);
   }
   0% {
     width: 0px;
-    left: 860px;
+    left: var(--topbar-width);
   }
 }
 
@@ -91,11 +96,11 @@
   }
   33% {
     width: 12px;
-    left: 860px;
+    left: var(--topbar-width);
   }
   0% {
     width: 0px;
-    left: 860px;
+    left: var(--topbar-width);
   }
 }
 
@@ -104,7 +109,7 @@
     width: 0px;
   }
   100% {
-    width: 860px;
+    width: var(--topbar-width);
   }
 }
 
@@ -113,13 +118,13 @@
     width: 0px;
   }
   100% {
-    width: 860px;
+    width: var(--topbar-width);
   }
 }
 
 @-webkit-keyframes unfill-topbar {
   0% {
-    width: 860px;
+    width: var(--topbar-width);
   }
   100% {
     width: 0px;
@@ -128,7 +133,7 @@
 
 @keyframes unfill-topbar {
   0% {
-    width: 860px;
+    width: var(--topbar-width);
   }
   100% {
     width: 0px;
@@ -201,7 +206,7 @@ body {
 .widget .clock {
   position: relative;
   height: 45px;
-  background-color: #ff7f00;
+  background-color: var(--accent-color);
   text-align: center;
   margin: 0px;
 }
@@ -275,7 +280,7 @@ body {
   top: 64px;
   height: 6px;
   width: 1310px;
-  background-color: #ff7f00;
+  background-color: var(--accent-color);
 }
 
 .overlay .middle-strip.enter {
@@ -328,7 +333,7 @@ body {
   width: 12px;
   top: 0px;
   left: 860px;
-  background-color: #ff7f00;
+  background-color: var(--accent-color);
 }
 
 .overlay .thing-for-animation.enter {
