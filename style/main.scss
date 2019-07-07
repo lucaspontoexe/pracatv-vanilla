@@ -10,6 +10,12 @@ $accent: $orange;
 @import 'fonts.scss';
 @import 'animations.scss';
 
+.debug {
+    position: absolute;
+    top: 860px;
+    left: 102px;
+}
+
 body {
     //background-image: url("20190704120426.jpg");
     //background-image: url('SMPTE_Color_Bars.svg');

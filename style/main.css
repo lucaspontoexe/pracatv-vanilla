@@ -171,6 +171,12 @@
   }
 }
 
+.debug {
+  position: absolute;
+  top: 860px;
+  left: 102px;
+}
+
 body {
   background-color: green;
   height: 1080px;
