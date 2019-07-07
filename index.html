@@ -16,18 +16,22 @@
         // Temporary animation trigger
         function anim8() {
             for (element of document.querySelector('.overlay').children) {
-                element.classList.add("animated")
+                if (element.classList.contains('reverse')) element.classList.replace("reverse", "animated");
+                else element.classList.add("animated");
             }
         }
 
         function reverse() {
             for (element of document.querySelector('.overlay').children) {
-                element.classList.replace("animated", "reverse")
+                element.classList.replace("animated", "reverse");
             }
         }
         setTimeout(anim8, 5000)
         setTimeout(reverse, 10000)
     </script>
+
+    <button onclick="anim8()">animate</button>
+    <button onclick="reverse()">reverse</button>
 
     <div class="widget">
         <div class="logo"></div>
