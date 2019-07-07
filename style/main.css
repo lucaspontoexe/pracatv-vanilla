@@ -246,7 +246,7 @@ body {
   background-color: rgba(2, 32, 60, 0.9);
 }
 
-.overlay .top-strip.animated {
+.overlay .top-strip.enter {
   -webkit-animation: fill-topbar 0.5s;
           animation: fill-topbar 0.5s;
   -webkit-animation-delay: 0.5s;
@@ -255,7 +255,7 @@ body {
           animation-fill-mode: both;
 }
 
-.overlay .top-strip.reverse {
+.overlay .top-strip.leave {
   -webkit-animation: unfill-topbar 0.5s;
           animation: unfill-topbar 0.5s;
   -webkit-animation-delay: 0.5s;
@@ -272,7 +272,7 @@ body {
   background-color: #ff7f00;
 }
 
-.overlay .middle-strip.animated {
+.overlay .middle-strip.enter {
   -webkit-animation: fill-to-right 0.4s;
           animation: fill-to-right 0.4s;
   -webkit-animation-delay: 0.25s;
@@ -281,7 +281,7 @@ body {
           animation-fill-mode: both;
 }
 
-.overlay .middle-strip.reverse {
+.overlay .middle-strip.leave {
   -webkit-animation: unfill-from-right 0.4s;
           animation: unfill-from-right 0.4s;
   -webkit-animation-delay: 0.8s;
@@ -298,7 +298,7 @@ body {
   background-color: #fafafa;
 }
 
-.overlay .bottom-strip.animated {
+.overlay .bottom-strip.enter {
   -webkit-animation: fill-to-right 1s;
           animation: fill-to-right 1s;
   -webkit-animation-delay: 1s;
@@ -307,7 +307,7 @@ body {
           animation-fill-mode: both;
 }
 
-.overlay .bottom-strip.reverse {
+.overlay .bottom-strip.leave {
   -webkit-animation: unfill-from-right 0.4s;
           animation: unfill-from-right 0.4s;
   -webkit-animation-delay: 0.6s;
@@ -325,14 +325,14 @@ body {
   background-color: #ff7f00;
 }
 
-.overlay .thing-for-animation.animated {
+.overlay .thing-for-animation.enter {
   -webkit-animation: smallthing 2s;
           animation: smallthing 2s;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
-.overlay .thing-for-animation.reverse {
+.overlay .thing-for-animation.leave {
   -webkit-animation: undo-smallthing 1.51s;
           animation: undo-smallthing 1.51s;
   -webkit-animation-fill-mode: both;

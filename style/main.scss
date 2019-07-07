@@ -92,13 +92,13 @@ body {
 
         background-color: $darkblue;
 
-        &.animated {
+        &.enter {
             animation: fill-topbar 0.5s;
             animation-delay: 0.5s;
             animation-fill-mode: both;
         }
 
-        &.reverse {
+        &.leave {
             animation: unfill-topbar 0.5s;
             animation-delay: 0.5s;
             animation-fill-mode: both;
@@ -113,13 +113,13 @@ body {
 
         background-color: $accent;
 
-        &.animated {
+        &.enter {
             animation: fill-to-right 0.4s;
             animation-delay: 0.25s;
             animation-fill-mode: both;
         }
 
-        &.reverse {
+        &.leave {
             animation: unfill-from-right 0.4s;
             animation-delay: 0.8s;
             animation-fill-mode: both;
@@ -134,13 +134,13 @@ body {
 
         background-color: $white;
 
-        &.animated {
+        &.enter {
             animation: fill-to-right 1s;
             animation-delay: 1s;
             animation-fill-mode: both;
         }
 
-        &.reverse {
+        &.leave {
             animation: unfill-from-right 0.4s;
             animation-delay: 0.6s;
             animation-fill-mode: both;
@@ -155,12 +155,12 @@ body {
         left: 860px;
         background-color: $accent;
 
-        &.animated {
+        &.enter {
             animation: smallthing 2s;
             animation-fill-mode: both;
         }
 
-        &.reverse {
+        &.leave {
             animation: undo-smallthing 1.51s; //hack
             animation-fill-mode: both;
         }

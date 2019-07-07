@@ -14,24 +14,24 @@
 
     <script>
         // Temporary animation trigger
-        function anim8() {
+        function enter() {
             for (element of document.querySelector('.overlay').children) {
-                if (element.classList.contains('reverse')) element.classList.replace("reverse", "animated");
-                else element.classList.add("animated");
+                if (element.classList.contains('leave')) element.classList.replace("leave", "enter");
+                else element.classList.add("enter");
             }
         }
 
-        function reverse() {
+        function leave() {
             for (element of document.querySelector('.overlay').children) {
-                element.classList.replace("animated", "reverse");
+                element.classList.replace("enter", "leave");
             }
         }
-        setTimeout(anim8, 5000)
-        setTimeout(reverse, 10000)
+        setTimeout(enter, 5000)
+        setTimeout(leave, 10000)
     </script>
 
-    <button onclick="anim8()">animate</button>
-    <button onclick="reverse()">reverse</button>
+    <button onclick="enter()">animate</button>
+    <button onclick="leave()">leave</button>
 
     <div class="widget">
         <div class="logo"></div>
@@ -39,10 +39,10 @@
     </div>
 
     <div class="overlay">
-        <div class="top-strip"><span class="heading">CRIME OCORRE, NADA ACONTECE</span></div>
-        <div class="thing-for-animation"></div>
-        <div class="middle-strip"></div>
-        <div class="bottom-strip"><span class="description">Feijoada. OffsetWidth neles.</span></div>
+        <div class="top-strip leave"><span class="heading">CRIME OCORRE, NADA ACONTECE</span></div>
+        <div class="thing-for-animation leave"></div>
+        <div class="middle-strip leave"></div>
+        <div class="bottom-strip leave"><span class="description">Feijoada. OffsetWidth neles.</span></div>
     </div>
 
 </body>
