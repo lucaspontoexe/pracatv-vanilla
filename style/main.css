@@ -234,7 +234,7 @@ body {
 }
 
 .overlay .heading {
-  line-height: 67px;
+  line-height: 66px;
   font-size: 36pt;
   font-family: 'Futura Heavy';
   text-transform: uppercase;
@@ -252,7 +252,7 @@ body {
   display: inline-block;
   position: relative;
   overflow: hidden;
-  height: 67px;
+  height: 66px;
   background-color: rgba(2, 32, 60, 0.9);
 }
 
@@ -276,7 +276,7 @@ body {
 
 .overlay .middle-strip {
   position: absolute;
-  top: 67px;
+  top: 66px;
   height: 6px;
   width: 1310px;
   z-index: 1;
@@ -329,7 +329,7 @@ body {
 
 .overlay .thing-for-animation {
   position: absolute;
-  height: 67px;
+  height: 66px;
   width: 12px;
   top: 0px;
   left: 860px;

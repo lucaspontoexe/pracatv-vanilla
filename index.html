@@ -13,7 +13,7 @@
 <body>
 
     <script>
-        // Temporary animation trigger
+        // Temporary script for viewing animations
         function enter() {
             const root = document.documentElement;
             const imaginaryStrip = document.querySelector('.imaginary-strip');
@@ -40,14 +40,19 @@
             }
         }
 
-        function addZero(number) {
-            return number < 10 ? '0' + number : number;
+        function setAccentColor(color) {
+            const root = document.documentElement;
+            root.style.setProperty('--accent-color', color);
         }
-
+                
         function updateClock() {
             const clock = document.querySelector('.clock span');
             const date = new Date();
             clock.innerText = `${addZero(date.getHours())}:${addZero(date.getMinutes())}`;
+        }
+
+        function addZero(number) {
+            return number < 10 ? '0' + number : number;
         }
         setInterval(updateClock, 1000);
     </script>
@@ -57,6 +62,9 @@
         <input type="text" id="insert_bottom" placeholder="Descrição" value="Feijoada.">
         <button onclick="enter()">animate</button>
         <button onclick="leave()">leave</button>
+        <button onclick="setAccentColor('rgb(250, 184, 20)')">bom dia praça</button>
+        <button onclick="setAccentColor('rgb(255, 127, 0)')">praça 1</button>
+        <button onclick="setAccentColor('rgb(90, 162, 245)')">praça 2</button>
     </div>
 
     <div class="widget">
