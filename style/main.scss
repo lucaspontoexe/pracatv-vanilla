@@ -12,13 +12,14 @@ $darkblue: rgba(2, 32, 60, 0.9);
 
 $accent: var(--accent-color);
 
+$mainPosition: 100px; //change to 890px at full screen
 
 @import 'fonts.scss';
 @import 'animations.scss';
 
 .debug {
     position: absolute;
-    top: 860px;
+    top: $mainPosition - 30px;
     left: 102px;
 }
 
@@ -34,7 +35,7 @@ body {
 .widget {
     position: absolute;
     left: 102px;
-    top: 890px;
+    top: $mainPosition;
     width: 232px;
 
     background-color: $white;
@@ -56,14 +57,14 @@ body {
             line-height: 45px;
             font-size: 30px;
             color: $white;
-            font-family: 'Futura Heavy', Arial, Helvetica, sans-serif;
+            font-family: 'Futura Heavy', "Century Gothic", Arial, Helvetica, sans-serif;
         }
     }
 }
 
 .overlay {
     position: absolute;
-    top: 890px;
+    top: $mainPosition;
     left: 340px;
 
     $topbarHeight: 66px;
@@ -75,7 +76,7 @@ body {
         margin-left: 20px;
         margin-right: 20px;
         white-space: nowrap;
-        font-family: Arial, Helvetica, sans-serif
+        font-family: "Century Gothic", Arial, Helvetica, sans-serif
     }
 
     .heading {
@@ -194,7 +195,7 @@ body {
         white-space: nowrap;
         line-height: 66px;
         font-size: 36pt;
-        font-family: 'Futura Heavy';
+        font-family: 'Futura Heavy', "Century Gothic", sans-serif;
         text-transform: uppercase;
         color: $white;
     }
