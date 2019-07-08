@@ -242,6 +242,8 @@ body {
 }
 
 .overlay .description {
+  position: absolute;
+  padding-top: 3px;
   line-height: 42px;
   font-size: 24pt;
   font-family: 'Futura Light';
