@@ -178,7 +178,7 @@
 
 .debug {
   position: absolute;
-  top: 70px;
+  top: 860px;
   left: 102px;
 }
 
@@ -192,7 +192,7 @@ body {
 .widget {
   position: absolute;
   left: 102px;
-  top: 100px;
+  top: 890px;
   width: 232px;
   background-color: #fafafa;
 }
@@ -220,7 +220,7 @@ body {
 
 .overlay {
   position: absolute;
-  top: 100px;
+  top: 890px;
   left: 340px;
   /*  TEXT  */
   /*  STRIPS and everything else  */
