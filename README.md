@@ -9,7 +9,7 @@ Em Breve™: Uma implementação em VueJS
 
 ## Demonstração
 
-link aqui
+https://lucaspontoexe.github.io/pracatv-vanilla/
 
 ## Uso
 
