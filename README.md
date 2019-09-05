@@ -4,7 +4,7 @@ Um clone do gerador de caracteres (GC) utilizado nos telejornais regionais
 
 ![o clone em si](img/doc.png)
 
-Em Breve™: Uma implementação em VueJS
+veja também: [uma implementação em VueJS](github.com/lucaspontoexe/pracatv-vue)
 
 
 ## Demonstração
